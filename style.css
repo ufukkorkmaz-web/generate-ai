@@ -408,6 +408,48 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--yellow); ou
   .avatar[data-mood="sleepy"]::after { animation: none; opacity: 1; }
 }
 
+.msg.dream { align-self: flex-start; font-style: italic; color: var(--soft-text); background: rgba(255,255,255,0.05); border: 1px dashed var(--p-edge, rgba(255,255,255,0.3)); border-radius: 22px 22px 22px 6px; }
+
+.game-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.game-btn { padding: 8px 14px; font-size: 14px; font-weight: 600; color: #fff; background: rgba(255,255,255,0.10); border: 1px solid rgba(163,255,18,0.45); border-radius: 99px; }
+.game-btn:hover:not(:disabled) { background: rgba(163,255,18,0.18); }
+.game-btn:disabled { opacity: 0.55; cursor: default; }
+.gigo-tag { display: inline-block; margin-top: 8px; padding: 3px 10px; border-radius: 99px; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #fff; background: rgba(255,255,255,0.12); border: 1px solid var(--yellow); }
+.gigo-tag.good { border-color: var(--lime); }
+.gigo-flow { display: block; margin-top: 10px; padding: 10px 12px; border-radius: 14px; background: rgba(0,0,0,0.22); border: 1px solid rgba(255,255,255,0.2); font-weight: 700; }
+.quality { display: flex; align-items: center; gap: 8px; margin-top: 4px; font-size: 12px; color: var(--soft-text); }
+.qbar { flex: 1; min-width: 60px; max-width: 140px; height: 8px; border-radius: 99px; background: rgba(255,255,255,0.15); overflow: hidden; }
+.qbar i { display: block; height: 100%; width: 100%; border-radius: 99px; background: hsl(110, 80%, 50%); transition: width 0.6s, background 0.6s; }
+.brain-note { font-size: 13.5px; color: var(--soft-text); }
+.brain-list { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.brain-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 14px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); }
+.brain-row.wrong { background: rgba(255,80,80,0.16); border-color: rgba(255,120,120,0.7); }
+.brain-text { flex: 1; min-width: 0; line-height: 1.35; }
+.brain-text small { display: block; margin-top: 2px; font-size: 12px; color: var(--soft-text); }
+.brain-row button { padding: 6px 12px; font-size: 13px; border-radius: 99px; color: #fff; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); }
+.brain-row button:hover { border-color: var(--lime); }
+.think-box { margin-top: 12px; padding: 12px; border-radius: 16px; background: rgba(0,0,0,0.22); border: 1px solid rgba(255,255,255,0.2); white-space: normal; }
+.think-title { display: block; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--yellow); }
+.think-q { margin: 6px 0 10px; font-size: 16px; line-height: 1.4; color: #fff; }
+.think-box input { width: 100%; padding: 10px 12px; border-radius: 12px; background: rgba(0,0,0,0.28); border: 1px solid rgba(255,255,255,0.22); color: #fff; font: inherit; outline: none; }
+.think-box input:focus { border-color: var(--lime); box-shadow: 0 0 0 3px rgba(163,255,18,0.2); }
+.think-box input:disabled { opacity: 0.55; }
+.think-box .fb { margin-top: 10px; }
+
+.overlay { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center;
+  padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  background: rgba(2,8,5,0.62); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.oops-card { width: min(440px, 100%); max-height: 100%; overflow-y: auto; padding: 22px; border-radius: 26px; line-height: 1.5; font-size: 15.5px;
+  background: var(--glass), rgba(8,20,14,0.86); border: 1px solid var(--glass-edge); box-shadow: var(--glass-shadow); animation: oopsPop 0.3s ease-out; }
+.oops-card h2 { font-size: 22px; margin-bottom: 10px; color: var(--yellow); }
+.oops-card p + p { margin-top: 10px; }
+.oops-quote { font-style: italic; padding: 10px 14px; border-radius: 14px; background: rgba(255,255,255,0.08); }
+.oops-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.oops-actions .primary { flex: 1 1 140px; }
+.oops-actions .secondary { flex: 1 1 140px; }
+@keyframes oopsPop { from { opacity: 0; transform: translateY(10px) scale(0.97); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .oops-card { animation: none; } }
+
 @media (max-width: 520px) {
   .msg { max-width: 92%; }
   .chat { padding: 12px; }
