@@ -56,6 +56,7 @@
         <div>
           <h1 id="aiName">AI</h1>
           <p class="status"><span class="dot"></span><span id="moodLabel">Feeling confused</span> &middot; <span id="factCount">0</span> things learned<span id="modeLabel"></span></p>
+          <div id="quality" class="quality hidden"><span id="qLabel">Data quality: 100%</span><div class="qbar"><i id="qFill"></i></div></div>
         </div>
       </div>
       <div class="header-actions">
@@ -71,6 +72,10 @@
     <main id="chat" class="chat" aria-live="polite"></main>
 
     <footer class="app-footer">
+      <div class="game-row">
+        <button id="topicBtn" class="game-btn" type="button">New topic lesson</button>
+        <button id="brainBtn" class="game-btn" type="button">Brain view</button>
+      </div>
       <form id="chatForm" class="chat-form" autocomplete="off">
         <input id="chatInput" type="text" maxlength="200" disabled placeholder="Press Train me, master! to begin..." aria-label="Message">
         <button type="submit" id="sendBtn" disabled>Send</button>
@@ -78,6 +83,32 @@
     </footer>
   </div>
 </section>
+
+<!-- Brain view -->
+<div id="brain" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="brainTitle">
+  <div class="oops-card">
+    <h2 id="brainTitle">Brain view</h2>
+    <p id="brainCount"></p>
+    <p class="brain-note">Red = wrong data. Your AI cannot see the colours. It believes everything it is given. You can delete facts to clean its brain.</p>
+    <div id="brainList" class="brain-list"></div>
+    <div class="oops-actions"><button id="brainClose" class="primary" type="button">Close</button></div>
+  </div>
+</div>
+
+<!-- Oops moment pop-up -->
+<div id="oops" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="oopsTitle">
+  <div class="oops-card">
+    <h2 id="oopsTitle">Oops moment!</h2>
+    <p>Your AI just answered with total confidence:</p>
+    <p id="oopsFact" class="oops-quote"></p>
+    <p>But that is not true. <span id="oopsReal"></span></p>
+    <p>Your AI is not lying. It only knows what you taught it. When people teach an AI wrong information, the AI repeats it, and it still sounds very sure. That is why we must always check facts!</p>
+    <div class="oops-actions">
+      <button id="oopsFix" class="primary" type="button">Fix my AI</button>
+      <button id="oopsKeep" class="secondary" type="button">Keep it (just for fun)</button>
+    </div>
+  </div>
+</div>
 
   <script src="script.js"></script>
 </body>
