@@ -123,7 +123,25 @@ const VOICE = {
     rightGuess: [`Wow, my guess was right! Lucky me!`],
     rightFact: [`Yay! Thank you, master. I feel smarter!`, `Great! I will be even more sure next time.`],
     wrongGuess: [`Oops, my guess was wrong! Please teach me the right answer.`],
-    wrongFact: [`Oops, I am sorry, master! Please teach me the right answer and I will fix my memory.`]
+    wrongFact: [`Oops, I am sorry, master! Please teach me the right answer and I will fix my memory.`],
+    dream: [`Zzz... I am dreaming... {d}...`, `Zzz... mmm... {d}... Zzz...`],
+    dreamWake: [`Oh! I woke up. I had a strange dream!`],
+    topicAsk: [`Which topic should we talk about today? Choose one, and then train me!`],
+    lessonIntro: [`Let's talk about {topic}! Train me on {topic}. Teach me 2 facts to start. For example: "{ex}".`],
+    claimIntro: [`Wait, master! Another user told me: "{claim}" Is that true?`, `Hmm, someone else said this to me: "{claim}" Is it true?`],
+    claimOkTrue: [`Great, thank you! I will remember: "{belief}"`],
+    claimOkFalse: [`Good catch! That was wrong. You protected my brain. I will remember the right fact: "{belief}"`],
+    claimBadFalse: [`Okay, if you say so! I will remember: "{belief}"`],
+    claimBadTrue: [`Oh, really? Okay. I will remember: "{belief}"`],
+    glitch: [`(Oh no, my brain is mixing things up... I keep thinking: "{bad}")`],
+    quizIntro: [`Quiz time! Let me answer some questions about {topic}, using only my memory.`],
+    lessonReportGood: [`Perfect score: {r} out of {n}! You gave me good data, so I gave you good answers. That is GIGO: Good In, Good Out!`],
+    lessonReportBad: [`My score: {r} out of {n}. Some of my answers were wrong because of the bad data I got. That is GIGO: Garbage In, Garbage Out!`],
+    spreadNote: [`Oh no! Because of that, my brain also guesses: \"{spread}\" Garbage spreads!`],
+    thinkIntro: [`Master, I have a question for YOU! Take a moment to think about it.`],
+    thinkThanks: [`Thank you for sharing your thought, master! I like how you think.`, `Interesting! Thank you. You help me understand the world better.`],
+    thinkSkip: [`Okay! You can think about it later, or talk about it with a friend.`],
+    oopsKeep: [`Okay, I will keep it. But remember: I only know what you teach me!`]
   },
   funny: {
     greetNew: [`Hi hi! I am {name}, a brand new AI. My brain is empty, like a pizza box on Monday! Press "Train me, master!" to fill it.`],
@@ -147,7 +165,25 @@ const VOICE = {
     rightGuess: [`Yay, my guess was right! I am a genius! (Maybe just lucky.)`],
     rightFact: [`Yay! Thank you, master. My brain feels bigger!`, `High five! I will be even more sure next time.`],
     wrongGuess: [`Oops, wrong guess! Please teach me the right answer.`],
-    wrongFact: [`Oops! My brain made a mistake. Please teach me the right answer and I will fix it.`]
+    wrongFact: [`Oops! My brain made a mistake. Please teach me the right answer and I will fix it.`],
+    dream: [`Zzz... *snore* ...{d}... hehe... Zzz...`, `Zzz... What a weird dream! {d}! Zzz...`],
+    dreamWake: [`Whoa! I had the weirdest dream, master!`],
+    topicAsk: [`Pick a topic, master! What should we talk about?`],
+    lessonIntro: [`Today we talk about {topic}! Train me on {topic}. Give me 2 facts to start. Example: "{ex}".`],
+    claimIntro: [`Psst, master! A strange user told me: "{claim}" Is that true?`, `Breaking news! Someone said: "{claim}" True or false?`],
+    claimOkTrue: [`Yay, thanks! My brain is fed: "{belief}"`],
+    claimOkFalse: [`Ha, good catch! You saved my brain! Now I know: "{belief}"`],
+    claimBadFalse: [`Okay, if you say so! Into my brain it goes: "{belief}"`],
+    claimBadTrue: [`Really? Okay, bye-bye true fact! I now believe: "{belief}"`],
+    glitch: [`(Uh-oh, my brain is doing a silly dance... I keep thinking: "{bad}")`],
+    quizIntro: [`Pop quiz about {topic}! I answer only from my brain. Let's see what is inside!`],
+    lessonReportGood: [`{r} out of {n}! My brain is sparkling. Good food in, good answers out. That is GIGO!`],
+    lessonReportBad: [`I got {r} out of {n}. My brain ate some garbage, so garbage came out. That is GIGO: Garbage In, Garbage Out!`],
+    spreadNote: [`Uh-oh, the garbage is spreading! My brain now also thinks: \"{spread}\"`],
+    thinkIntro: [`Psst, master! Time for YOUR brain to work. Think about this one!`],
+    thinkThanks: [`Whoa, big brain! Thanks for sharing. My little brain is impressed.`],
+    thinkSkip: [`No problem! Your brain can take a break. Maybe ask a friend later.`],
+    oopsKeep: [`Okay, I will keep believing it, hehe! But remember: I believe everything you teach me!`]
   },
   serious: {
     greetNew: [`Hello. I am {name}. I am a new AI with no knowledge. Press "Train me, master!" to begin my training.`],
@@ -171,7 +207,25 @@ const VOICE = {
     rightGuess: [`My guess was correct. Thank you for confirming.`],
     rightFact: [`Thank you for confirming, master. My confidence increases.`, `Confirmed. I will be more certain next time.`],
     wrongGuess: [`My guess was incorrect. Please teach me the right answer.`],
-    wrongFact: [`I apologize, master. Please teach me the correct answer and I will update my memory.`]
+    wrongFact: [`I apologize, master. Please teach me the correct answer and I will update my memory.`],
+    dream: [`Zzz... (dreaming) {d}. Zzz...`],
+    dreamWake: [`I am awake. I had an unusual dream.`],
+    topicAsk: [`Please choose a topic for today's lesson.`],
+    lessonIntro: [`We will study {topic}. Please train me on {topic}. Teach me 2 facts to begin. For example: "{ex}".`],
+    claimIntro: [`Master, another user told me: "{claim}" Is this statement true?`],
+    claimOkTrue: [`Thank you. I have stored this fact: "{belief}"`],
+    claimOkFalse: [`Correct. That statement was false. I have stored the right fact: "{belief}"`],
+    claimBadFalse: [`Understood. I have stored: "{belief}"`],
+    claimBadTrue: [`Understood. I have stored: "{belief}"`],
+    glitch: [`(My data now contains an error. I keep recalling: "{bad}")`],
+    quizIntro: [`Now a short test on {topic}. I will answer using only my memory.`],
+    lessonReportGood: [`Score: {r} out of {n}. You gave me good data, so my answers are good. This is GIGO: Good In, Good Out.`],
+    lessonReportBad: [`Score: {r} out of {n}. My errors come from the bad data I received. This is GIGO: Garbage In, Garbage Out.`],
+    spreadNote: [`Note: this error spreads. I now also infer: \"{spread}\"`],
+    thinkIntro: [`Master, I would like to ask you a question. Please think carefully.`],
+    thinkThanks: [`Thank you for your answer. It is a thoughtful one.`],
+    thinkSkip: [`Understood. Please consider the question later, or discuss it with a classmate.`],
+    oopsKeep: [`Understood. I will keep it. Remember: I only know what I am taught.`]
   },
   robot: {
     greetNew: [`BEEP BOOP. I am {name}. NEW AI ONLINE. Memory: 0 facts. Press "Train me, master!" to upload knowledge.`],
@@ -195,7 +249,25 @@ const VOICE = {
     rightGuess: [`Estimate correct! Happy beep boop!`],
     rightFact: [`Thank you. Confidence level up! BEEP.`, `Confirmed. Accuracy improved.`],
     wrongGuess: [`Estimate incorrect. Please upload the right answer.`],
-    wrongFact: [`ERROR found. Please upload the correct answer and I will fix my memory.`]
+    wrongFact: [`ERROR found. Please upload the correct answer and I will fix my memory.`],
+    dream: [`SLEEP MODE. DREAM DATA: {d}. ZZZ...`],
+    dreamWake: [`WAKING UP. Dream data saved. BEEP.`],
+    topicAsk: [`SELECT TOPIC. BEEP.`],
+    lessonIntro: [`TOPIC: {topic}. TRAIN ME. UPLOAD 2 FACTS. EXAMPLE: "{ex}". BEEP.`],
+    claimIntro: [`ALERT. EXTERNAL USER DATA: "{claim}" VERIFY. TRUE OR FALSE?`],
+    claimOkTrue: [`DATA ACCEPTED: "{belief}"`],
+    claimOkFalse: [`CORRECT. FALSE DATA REJECTED. STORED: "{belief}"`],
+    claimBadFalse: [`ACCEPTED. STORED: "{belief}"`],
+    claimBadTrue: [`ACCEPTED. STORED: "{belief}"`],
+    glitch: [`(WARNING: MEMORY CORRUPTED. OUTPUT: "{bad}")`],
+    quizIntro: [`TEST MODE. TOPIC: {topic}. OUTPUT FROM MEMORY ONLY.`],
+    lessonReportGood: [`SCORE: {r}/{n}. DATA QUALITY: GOOD. GOOD IN, GOOD OUT. BEEP BOOP.`],
+    lessonReportBad: [`SCORE: {r}/{n}. BAD DATA IN, BAD DATA OUT. THIS IS GIGO. BEEP.`],
+    spreadNote: [`WARNING: ERROR SPREADING. NEW FALSE DATA: \"{spread}\"`],
+    thinkIntro: [`QUESTION FOR HUMAN. Please process this question. BEEP.`],
+    thinkThanks: [`ANSWER RECEIVED. Thank you, human. Very smart. BEEP BOOP.`],
+    thinkSkip: [`QUESTION SKIPPED. You can process it later.`],
+    oopsKeep: [`DATA KEPT. WARNING: I only know what you upload.`]
   }
 };
 
@@ -226,7 +298,11 @@ const MOODS = {
 let curMood = "confused";
 let moodTimer = null;
 let sleepTimer = null;
-let SLEEP_MS = 45000;
+let SLEEP_MS = 10000;
+let dreamTimer = null;
+let dreamCount = 0;
+let DREAM_FIRST = 2500;
+let DREAM_GAP = 14000;
 
 function baseMood() {
   const n = state.memories.length;
@@ -278,11 +354,48 @@ function feel(m, hold) {
 // The AI falls asleep when nobody does anything for a while
 function bump() {
   clearTimeout(sleepTimer);
+  clearTimeout(dreamTimer);
   if (!$("screen-app").classList.contains("active")) return;
-  if (curMood === "sleepy") feel(baseMood());
+  if (curMood === "sleepy") {
+    feel(baseMood());
+    if (dreamCount > 0) {
+      dreamCount = 0;
+      setTimeout(() => addMessage(say("dreamWake"), "ai"), 500);
+    }
+  }
+  armSleep(SLEEP_MS);
+}
+
+// Fall asleep after the quiet time, but not while the AI is talking
+function armSleep(ms) {
+  clearTimeout(sleepTimer);
   sleepTimer = setTimeout(() => {
-    if (!busy && $("screen-app").classList.contains("active")) feel("sleepy");
-  }, SLEEP_MS);
+    if (!$("screen-app").classList.contains("active")) return;
+    if (busy) { armSleep(2000); return; }
+    feel("sleepy");
+    dreamCount = 0;
+    scheduleDream(DREAM_FIRST);
+  }, ms);
+}
+
+// While the AI sleeps it dreams out loud (up to 3 dreams)
+function scheduleDream(ms) {
+  clearTimeout(dreamTimer);
+  dreamTimer = setTimeout(() => {
+    if (curMood !== "sleepy" || busy) return;
+    addDream();
+    if (dreamCount < 3) scheduleDream(DREAM_GAP);
+  }, ms);
+}
+
+function addDream() {
+  const el = document.createElement("div");
+  el.className = "msg dream";
+  el.textContent = say("dream", { d: makeDream() });
+  $("chat").appendChild(el);
+  $("chat").scrollTop = $("chat").scrollHeight;
+  dreamCount++;
+  sfx("dream");
 }
 ["keydown", "pointerdown", "input"].forEach((ev) => document.addEventListener(ev, bump, true));
 
@@ -324,6 +437,7 @@ const SFX = {
   pop:   () => { tone(520, 0, 0.12, 0.04); tone(780, 0.03, 0.12, 0.025); },
   send:  () => { tone(440, 0, 0.07, 0.025); },
   oops:  () => { tone(329.6, 0, 0.25, 0.05); tone(261.6, 0.12, 0.35, 0.05); },
+  dream: () => { tone(880, 0, 0.6, 0.025); tone(659.25, 0.25, 0.8, 0.02); tone(783.99, 0.5, 0.9, 0.015); },
   wake:  () => { [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => tone(f, i * 0.08, 0.45, 0.04)); }
 };
 
@@ -515,6 +629,12 @@ function startApp(returning) {
   $("chat").innerHTML = "";
   mode = null;
   askedKeys.clear();
+  lesson = null;
+  $("quality").classList.add("hidden");
+  clearTimeout(dreamTimer);
+  dreamCount = 0;
+  if (state.lessons == null) state.lessons = state.memories.length;
+  if (state.think == null) state.think = Math.floor(state.lessons / 4);
   setMode(null);
 
   const forgotten = purgeOld();
@@ -524,11 +644,11 @@ function startApp(returning) {
   sfx("wake");
 
   if (returning && state.memories.length > 0) {
-    respond(say("greetBack", { name: state.name, n: state.memories.length, things: state.memories.length === 1 ? "thing" : "things" }));
+    respond(say("greetBack", { name: state.name, n: state.memories.length, things: state.memories.length === 1 ? "thing" : "things" }), false, 800, { then: offerTopics });
   } else if (returning) {
-    respond(say("greetEmpty", { name: state.name }));
+    respond(say("greetEmpty", { name: state.name }), false, 800, { then: offerTopics });
   } else {
-    respond(say("greetNew", { name: state.name }));
+    respond(say("greetNew", { name: state.name }), false, 800, { then: offerTopics });
   }
   if (forgotten > 0) {
     systemSay("I forgot " + forgotten + (forgotten === 1 ? " memory" : " memories") +
@@ -609,6 +729,7 @@ $("chatForm").addEventListener("submit", (e) => {
     respond(say("kind"), false);
     return;
   }
+  if (lesson && lesson.stage === "claim") { claimInput(text); return; }
   if (mode === "teach") teach(text);
   else ask(text);
 });
@@ -640,6 +761,7 @@ function respond(text, glow, delay, opts) {
       el.classList.remove("streaming");
       if (opts.conf != null) addConfidence(el, opts.conf, opts.guess);
       if (opts.mem) addFeedback(el, opts);
+      if (opts.decorate) opts.decorate(el);
       $("chat").scrollTop = $("chat").scrollHeight;
       const m = opts.mood || (glow ? "excited" : null);
       feel(m || baseMood(), m ? 3500 : 0);
@@ -718,7 +840,9 @@ function addFeedback(el, info) {
 
 /* ---------- Teaching ---------- */
 function refreshPlaceholder() {
-  if (mode === "teach") {
+  if (lesson && mode === "teach" && lesson.stage === "teach") {
+    $("chatInput").placeholder = "Teach me about " + lesson.topic.name + "... (example: " + lesson.topic.ex + ")";
+  } else if (mode === "teach") {
     $("chatInput").placeholder = pending
       ? "Answer my question, or teach me something new..."
       : "Teach me something... (example: A cat has four legs)";
@@ -743,7 +867,10 @@ function teach(text) {
     return;
   }
 
-  state.memories.push({ text: clean, time: Date.now() });
+  const silly = sillyCheck(clean);   // the AI does not know it is wrong: it just believes what it is taught
+  const mem = { text: clean, time: Date.now(), silly: silly || undefined };
+  state.memories.push(mem);
+  state.lessons = (state.lessons || 0) + 1;
   if (fix && fix.mem && fix.mem.text.toLowerCase() !== clean.toLowerCase()) {
     state.memories = state.memories.filter((m) => m !== fix.mem); // forget the wrong fact
   }
@@ -766,7 +893,17 @@ function teach(text) {
     if (prev) next = prev.streak < 3 ? nextFollowUp(prev.info, prev.streak + 1) : null;
     else next = firstFollowUp(clean);
   }
-  respond(reply, true, 800, next ? { then: () => askNext(next) } : {});
+  let opts = {};
+  if (lesson && !fix && lesson.stage === "teach") {
+    lesson.facts++;
+    if (lesson.garbage > 0 && lesson.lastBad) {
+      reply += " " + say("glitch", { bad: lesson.lastBad });
+      opts.mood = "confused";
+    }
+    if (lesson.facts >= lesson.nextClaimAt && lesson.claimIdx < lesson.claims.length) opts.then = askClaim;
+  } else if (next) opts = { then: () => askNext(next) };
+  else if (!fix && thinkDue()) opts = { then: showThink };
+  respond(reply, true, 800, opts);
 }
 
 /* ---------- Curious follow-up questions ---------- */
@@ -901,6 +1038,509 @@ function composeTaught(text, prev) {
   }
   return text;
 }
+
+/* ---------- "Think about it" prompts and the "Oops moment" ---------- */
+const THINK_Q = [
+  "How does your AI know what it knows? Where did its knowledge come from?",
+  "What can your AI do well? What can it NOT do yet?",
+  "What happens if you teach your AI something wrong? Why is that a problem?",
+  "Would you trust your AI to help with your homework? Why or why not?",
+  "Your AI only knows what you taught it. Can a real AI know things that nobody taught it? How?",
+  "Does your AI understand your words, or does it only match words? What do you think?",
+  "If 100 students taught the same AI, what could go wrong?",
+  "How is learning for an AI different from learning for you?"
+];
+
+// A new question after every 4th lesson
+function thinkDue() { return (state.lessons || 0) >= 4 * ((state.think || 0) + 1); }
+
+function showThink() {
+  const q = THINK_Q[(state.think || 0) % THINK_Q.length];
+  state.think = (state.think || 0) + 1;
+  save();
+  respond(say("thinkIntro"), false, 700, { decorate: (el) => addThinkBox(el, q) });
+}
+
+function addThinkBox(el, q) {
+  const box = document.createElement("div");
+  box.className = "think-box";
+  const title = document.createElement("b");
+  title.className = "think-title";
+  title.textContent = "Think about it";
+  const qp = document.createElement("p");
+  qp.className = "think-q";
+  qp.textContent = q;
+  const input = document.createElement("input");
+  input.type = "text";
+  input.maxLength = 240;
+  input.placeholder = "Your thought (optional)";
+  input.setAttribute("aria-label", "Your thought");
+  const fb = document.createElement("div");
+  fb.className = "fb";
+  const share = document.createElement("button");
+  share.type = "button";
+  share.textContent = "Share my thought";
+  const skip = document.createElement("button");
+  skip.type = "button";
+  skip.textContent = "Skip";
+  const lock = () => { input.disabled = true; share.disabled = true; skip.disabled = true; };
+  const send = () => {
+    const v = input.value.trim();
+    if (!v) { input.focus(); return; }
+    if (busy) return;
+    if (isBlocked(v)) { input.value = ""; userSay(v); respond(say("kind"), false); return; }
+    lock();
+    userSay(v);
+    respond(say("thinkThanks"), true, 700);
+  };
+  share.addEventListener("click", send);
+  input.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); send(); } });
+  skip.addEventListener("click", () => { if (busy) return; lock(); respond(say("thinkSkip"), false, 400); });
+  fb.append(share, skip);
+  box.append(title, qp, input, fb);
+  el.appendChild(box);
+}
+
+/* A small fact-checker. The AI itself never checks: it believes everything it is taught.
+   The checker only decides when the pop-up should teach the lesson later. */
+const NUMWORDS_MAP = { zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12,
+  thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20, "twenty-four": 24,
+  thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90, hundred: 100 };
+const NUM_PAT = "\\d+|" + Object.keys(NUMWORDS_MAP).sort((a, b) => b.length - a.length).join("|");
+function numVal(w) {
+  w = w.toLowerCase();
+  if (/^\d+$/.test(w)) return parseInt(w, 10);
+  return Object.prototype.hasOwnProperty.call(NUMWORDS_MAP, w) ? NUMWORDS_MAP[w] : null;
+}
+function singular(w) {
+  w = w.toLowerCase();
+  if (/ies$/.test(w) && w.length > 4) return w.slice(0, -3) + "y";
+  if (/(ss|us|is)$/.test(w)) return w;
+  return /s$/.test(w) && w.length > 3 ? w.slice(0, -1) : w;
+}
+const NO_FLY = ["cat", "dog", "cow", "horse", "fish", "pig", "sheep", "goat", "elephant", "lion", "tiger", "bear", "rabbit", "mouse", "turtle",
+  "snake", "frog", "wolf", "fox", "deer", "monkey", "giraffe", "human", "person", "people", "student", "teacher", "boy", "girl", "car", "table", "chair", "book", "tree", "house"];
+const SILLY_ADJ = {
+  sky: ["green", "brown", "purple"], grass: ["blue", "red", "pink", "purple", "black", "white", "orange"],
+  snow: ["black", "green", "red", "purple", "pink", "hot", "warm"], banana: ["blue", "purple", "pink"],
+  sun: ["cold", "freezing", "green", "blue", "purple"], fire: ["cold", "wet", "freezing"], ice: ["hot", "warm", "dry"],
+  water: ["dry"], milk: ["blue", "green", "red", "black"], sugar: ["salty", "sour"], lemon: ["sweet", "blue"], blood: ["blue", "green"]
+};
+const LEGS = { cat: 4, dog: 4, cow: 4, horse: 4, sheep: 4, pig: 4, goat: 4, lion: 4, tiger: 4, elephant: 4, bird: 2, human: 2, person: 2, people: 2,
+  duck: 2, chicken: 2, spider: 8, ant: 6, bee: 6, insect: 6 };
+const COUNTS = [["week", "days", 7], ["year", "months", 12], ["day", "hours", 24], ["hour", "minutes", 60], ["minute", "seconds", 60], ["triangle", "sides", 3], ["square", "sides", 4]];
+const CAPITALS = { france: "Paris", turkey: "Ankara", turkiye: "Ankara", england: "London", italy: "Rome", spain: "Madrid", germany: "Berlin",
+  japan: "Tokyo", greece: "Athens", egypt: "Cairo", russia: "Moscow", china: "Beijing", canada: "Ottawa", brazil: "Brasilia" };
+const plainWord = (w) => w.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z]/g, "");
+
+// Returns a sentence about the real world when a fact is clearly wrong, otherwise null
+function sillyCheck(fact) {
+  const t = fact.replace(/\s+/g, " ").trim();
+  const low = t.toLowerCase().replace(/[.!?]+$/, "");
+  if (/\b(not|never|cannot|can't|isn't|aren't|don't|doesn't|no)\b/.test(low)) return null;
+  const sp = splitFact(t);
+  const subjLow = sp ? sp.subj.toLowerCase() : "";
+  const head = sp ? singular(sp.subj.split(/\s+/).pop().replace(/'s$/i, "").replace(/[^A-Za-z]/g, "")) : "";
+  const pred = sp ? sp.pred.toLowerCase() : "";
+  const be = pred.split(/\s+/)[0];
+
+  if (sp && NO_FLY.includes(head) && /\b(fly|flies|flying)\b/.test(pred)) return "In real life, " + subjLow + " cannot fly.";
+  if (sp && SILLY_ADJ[head] && /^(is|are)\b/.test(pred)) {
+    const bad = SILLY_ADJ[head].find((c) => new RegExp("\\b" + c + "\\b").test(pred));
+    if (bad) return "In real life, " + subjLow + " " + be + " not " + bad + ".";
+  }
+  const legs = low.match(new RegExp("\\b(?:has|have)\\s+(" + NUM_PAT + ")\\s+legs?\\b"));
+  if (sp && legs && LEGS[head] !== undefined) {
+    const n = numVal(legs[1]);
+    if (n !== null && n !== LEGS[head]) return "In real life, " + subjLow + " usually " + (pred.startsWith("has") ? "has" : "have") + " " + LEGS[head] + " legs.";
+  }
+  for (const [h, unit, n] of COUNTS) {
+    const m = low.match(new RegExp("\\b" + h + "s?\\s+(?:has|have|is|are|contains)\\s+(?:only\\s+|about\\s+)?(" + NUM_PAT + ")\\s+" + unit + "\\b"));
+    if (m) {
+      const v = numVal(m[1]);
+      if (v !== null && v !== n) return "In real life, " + (h === "hour" ? "an" : "a") + " " + h + " has " + n + " " + unit + ".";
+    }
+  }
+  const c1 = low.match(/capital (?:city )?of (?:the )?([a-zçğıöşü]+) is (?:the city of )?([a-zçğıöşü]+)/);
+  const c2 = low.match(/^(?:the city of )?([a-zçğıöşü]+) is the capital (?:city )?of (?:the )?([a-zçğıöşü]+)/);
+  const pair = c1 ? { country: c1[1], city: c1[2] } : c2 ? { country: c2[2], city: c2[1] } : null;
+  if (pair) {
+    const real = CAPITALS[plainWord(pair.country)];
+    if (real && plainWord(real) !== plainWord(pair.city)) return "In real life, the capital of " + cap(pair.country) + " is " + real + ".";
+  }
+  const sum = low.match(/(\d+)\s*(\+|-|x|\*|plus|minus|times)\s*(\d+)\s*(?:=|is|equals)\s*(\d+)/);
+  if (sum) {
+    const a = +sum[1], b = +sum[3], c = +sum[4], op = sum[2];
+    const r = (op === "+" || op === "plus") ? a + b : (op === "-" || op === "minus") ? a - b : a * b;
+    if (r !== c) return "In real life, " + a + " " + ({ plus: "+", minus: "-", times: "x", "*": "x" }[op] || op) + " " + b + " = " + r + ".";
+  }
+  if (/\b(earth|world)\b.*\b(flat|square|cube|triangle)\b/.test(low)) return "In real life, the Earth is round, almost like a ball.";
+  if (/\bmoon\b.*\bcheese\b/.test(low)) return "In real life, the Moon is made of rock, not cheese.";
+  return null;
+}
+
+// Show the pop-up the first time the AI repeats a wrong fact
+let oopsMem = null;
+function maybeOops(mem) {
+  if (lesson || !mem || !mem.silly || mem.oopsShown) return;
+  setTimeout(() => showOops(mem), 700);
+}
+function showOops(mem) {
+  if (!$("screen-app").classList.contains("active") || !state.memories.includes(mem)) return;
+  mem.oopsShown = true;
+  save();
+  oopsMem = mem;
+  $("oopsFact").textContent = "“" + mem.text.replace(/[.!?]+$/, "") + ".”";
+  $("oopsReal").textContent = mem.silly;
+  $("oops").classList.remove("hidden");
+  sfx("oops");
+  $("oopsFix").focus();
+}
+function closeOops() {
+  $("oops").classList.add("hidden");
+  oopsMem = null;
+}
+$("oopsFix").addEventListener("click", () => {
+  const mem = oopsMem;
+  closeOops();
+  if (busy || !mem) return;
+  setMode("teach");
+  pending = null;
+  correction = { mem };
+  respond(say("wrongFact"), false, 400, { mood: "sorry" });
+});
+$("oopsKeep").addEventListener("click", () => {
+  closeOops();
+  if (!busy) respond(say("oopsKeep"), false, 400);
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !$("oops").classList.contains("hidden")) closeOops();
+});
+
+/* ---------- Dreams ---------- */
+const DREAM_ACTIONS = ["dancing on the moon", "wearing a tiny hat", "flying over the school", "eating a giant pizza", "singing in the rain",
+  "swimming in a sea of jelly", "riding a rainbow", "sleeping on a cloud"];
+
+function shuffle(a) { return a.map((x) => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map((p) => p[1]); }
+
+// Split a taught sentence into subject + predicate ("Cats" + "have 4 legs")
+function splitFact(fact) {
+  const clean = fact.replace(/[.!?]+$/, "").trim();
+  const words = clean.split(/\s+/);
+  if (/^(i|my|we)$/i.test(words[0])) return null;
+  const idx = words.findIndex((w, i) => i > 0 && VERBS.includes(w.toLowerCase().replace(/[^a-z']/g, "")));
+  if (idx < 1 || idx > 3) return null;
+  const subj = words.slice(0, idx).join(" ");
+  const pred = words.slice(idx).join(" ");
+  const info = analyzeFact(clean);
+  const head = words[idx - 1].replace(/'s$/i, "").replace(/[^A-Za-z]/g, "");
+  return {
+    subj, pred,
+    pl: info ? info.pl : isPlural(head),
+    safe: !/\b(they|them|their|it|its|he|she|his|her|you|your|we|our|i|my)\b/i.test(pred)
+  };
+}
+
+// The AI mixes up what it knows. Mixed sentences must stay grammatical (same number, no pronouns).
+function makeDream() {
+  const parts = state.memories.map((m) => splitFact(m.text)).filter(Boolean);
+  if (parts.length === 0) return "I was floating in a sea of letters... A, B, C, D...";
+  if (parts.length >= 2 && Math.random() < 0.7) {
+    const order = shuffle(parts);
+    for (const a of order) {
+      for (const b of order) {
+        if (a === b || !b.safe || a.subj.toLowerCase() === b.subj.toLowerCase()) continue;
+        if (/^can\b/i.test(b.pred) || a.pl === b.pl) return cap(a.subj) + " " + b.pred;
+      }
+    }
+  }
+  const a = pick(parts);
+  return cap(a.subj) + " " + (a.pl ? "were " : "was ") + pick(DREAM_ACTIONS);
+}
+
+// Talk to the student: "My name is Ali" becomes "Your name is Ali"
+function toYou(t) {
+  const keep = (m, you) => (m[0] === m[0].toUpperCase() ? cap(you) : you);
+  return t
+    .replace(/^i am\b/i, "You are").replace(/^i'm\b/i, "You are").replace(/^i\b/i, "You")
+    .replace(/\bmyself\b/gi, (m) => keep(m, "yourself"))
+    .replace(/\bmine\b/gi, (m) => keep(m, "yours"))
+    .replace(/\bmy\b/gi, (m) => keep(m, "your"))
+    .replace(/\bme\b/gi, (m) => keep(m, "you"));
+}
+
+/* ---------- The GIGO lesson: Garbage In, Garbage Out ---------- */
+// Each claim: s = what "another user" says, truth, right = what the AI believes if the student answers correctly,
+// wrong = what it believes if the student answers wrongly, q = quiz question
+const TOPICS = [
+  { id: "cats", name: "cats", label: "Cats", ex: "Cats have four legs", claims: [
+    { s: "Cats bark.", sp: ["Cats say woof.", "Do cats say woof?"], truth: false, right: "Cats meow.", wrong: "Cats bark.", q: "Do cats bark?" },
+    { s: "Cats can fly.", sp: ["Cats have wings.", "Do cats have wings?"], truth: false, right: "Cats cannot fly.", wrong: "Cats can fly.", q: "Can cats fly?" },
+    { s: "Cats have whiskers.", sp: ["Cats have smooth faces.", "Do cats have smooth faces?"], truth: true, right: "Cats have whiskers.", wrong: "Cats do not have whiskers.", q: "Do cats have whiskers?" },
+    { s: "Cats purr when they are happy.", sp: ["Cats are always silent.", "Are cats always silent?"], truth: true, right: "Cats purr when they are happy.", wrong: "Cats never purr.", q: "Do cats purr?" } ] },
+  { id: "dogs", name: "dogs", label: "Dogs", ex: "Dogs like bones", claims: [
+    { s: "Dogs lay eggs.", sp: ["Baby dogs hatch from eggs.", "Do baby dogs hatch from eggs?"], truth: false, right: "Dogs do not lay eggs.", wrong: "Dogs lay eggs.", q: "Do dogs lay eggs?" },
+    { s: "Dogs can talk like people.", sp: ["Dogs can read books.", "Can dogs read books?"], truth: false, right: "Dogs cannot talk like people.", wrong: "Dogs can talk like people.", q: "Can dogs talk like people?" },
+    { s: "Dogs have a great sense of smell.", sp: ["Dogs cannot find food by smell.", "Can dogs find food by smell?"], truth: true, right: "Dogs have a great sense of smell.", wrong: "Dogs have a bad sense of smell.", q: "Do dogs have a good sense of smell?" },
+    { s: "Dogs are mammals.", sp: ["Dogs have feathers.", "Do dogs have feathers?"], truth: true, right: "Dogs are mammals.", wrong: "Dogs are birds.", q: "Are dogs mammals or birds?" } ] },
+  { id: "birds", name: "birds", label: "Birds", ex: "Birds have wings", claims: [
+    { s: "Birds have four legs.", sp: ["Birds cannot stand on two legs.", "Can birds stand on two legs?"], truth: false, right: "Birds have two legs.", wrong: "Birds have four legs.", q: "How many legs do birds have?" },
+    { s: "Birds are mammals.", sp: ["Baby birds drink milk.", "Do baby birds drink milk?"], truth: false, right: "Birds are not mammals.", wrong: "Birds are mammals.", q: "Are birds mammals?" },
+    { s: "Birds have feathers.", sp: ["Birds are covered in fur.", "Are birds covered in fur?"], truth: true, right: "Birds have feathers.", wrong: "Birds do not have feathers.", q: "Do birds have feathers?" },
+    { s: "Most birds can fly.", sp: ["Birds live only on the ground.", "Where do birds live?"], truth: true, right: "Most birds can fly.", wrong: "Birds can never fly.", q: "Can birds fly?" } ] },
+  { id: "fish", name: "fish", label: "Fish", ex: "Fish live in water", claims: [
+    { s: "Fish live on land.", sp: ["Fish die in water.", "Do fish die in water?"], truth: false, right: "Fish live in water.", wrong: "Fish live on land.", q: "Where do fish live?" },
+    { s: "Fish have legs.", sp: ["Fish walk on the beach.", "Can fish walk on the beach?"], truth: false, right: "Fish do not have legs.", wrong: "Fish have legs.", q: "Do fish have legs?" },
+    { s: "Fish breathe with gills.", sp: ["Fish cannot breathe in water.", "Can fish breathe in water?"], truth: true, right: "Fish breathe with gills.", wrong: "Fish breathe with lungs, like us.", q: "How do fish breathe?" },
+    { s: "Fish can swim.", sp: ["Fish cannot move in water.", "Can fish move in water?"], truth: true, right: "Fish can swim.", wrong: "Fish cannot swim.", q: "Can fish swim?" } ] },
+  { id: "sun", name: "the sun", label: "The sun", ex: "The sun is very big", claims: [
+    { s: "The sun is cold.", sp: ["Ice cream never melts in the sun.", "Does ice cream melt in the sun?"], truth: false, right: "The sun is very hot.", wrong: "The sun is cold.", q: "Is the sun hot or cold?" },
+    { s: "The sun is a planet.", sp: ["The sun goes around the Earth.", "Does the sun go around the Earth?"], truth: false, right: "The sun is a star.", wrong: "The sun is a planet.", q: "Is the sun a planet?" },
+    { s: "The sun gives us light.", sp: ["Daytime is dark.", "Is daytime dark?"], truth: true, right: "The sun gives us light.", wrong: "The sun gives us no light.", q: "Does the sun give us light?" },
+    { s: "The sun rises in the morning.", sp: ["We see the sun at midnight.", "Can we see the sun at midnight?"], truth: true, right: "The sun rises in the morning.", wrong: "The sun rises at night.", q: "When does the sun rise?" } ] }
+];
+const GIGO_Q = "How can you check if information is true before you give it to an AI?";
+let lesson = null;   // { topic, claims, facts, nextClaimAt, claimIdx, stage, garbage, lastBad, results, cur, btns }
+
+function updateQuality() {
+  const q = lesson ? Math.max(0, 100 - 25 * lesson.garbage - 10 * lesson.spreads) : 100;
+  $("quality").classList.remove("hidden");
+  $("qLabel").textContent = "Data quality: " + q + "%";
+  $("qFill").style.width = Math.max(q, 4) + "%";
+  $("qFill").style.background = "hsl(" + Math.round(q * 1.1) + ", 80%, 50%)";
+}
+
+function offerTopics() {
+  lesson = null;
+  setMode(null);
+  $("modeLabel").textContent = "";
+  respond(say("topicAsk"), false, 500, { decorate: (el) => {
+    const fb = document.createElement("div");
+    fb.className = "fb";
+    TOPICS.forEach((t) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = t.label;
+      b.addEventListener("click", () => {
+        if (busy) return;
+        fb.querySelectorAll("button").forEach((x) => { x.disabled = true; });
+        userSay("Let's talk about " + t.name + "!");
+        startLesson(t);
+      });
+      fb.appendChild(b);
+    });
+    el.appendChild(fb);
+  } });
+}
+
+function startLesson(topic) {
+  const removed = state.memories.filter((m) => m.gigo).length;
+  if (removed) { state.memories = state.memories.filter((m) => !m.gigo); save(); updateCount(); }
+  // Three claims, always at least one true and one false
+  let claims;
+  do { claims = shuffle(topic.claims).slice(0, 3); } while (!claims.some((c) => c.truth) || claims.every((c) => c.truth));
+  lesson = { topic, claims, facts: 0, nextClaimAt: 2, claimIdx: 0, stage: "teach", garbage: 0, spreads: 0, mems: [], lastBad: null, results: [], cur: null, btns: [] };
+  updateQuality();
+  setMode("teach");
+  refreshPlaceholder();
+  respond(say("lessonIntro", { topic: topic.name, ex: topic.ex }), false, 700);
+}
+
+function askClaim() {
+  lesson.stage = "claim";
+  const claim = lesson.claims[lesson.claimIdx++];
+  lesson.cur = claim;
+  lesson.btns = [];
+  lesson.nextClaimAt = lesson.facts + 2;
+  $("chatInput").placeholder = "Type yes or no...";
+  respond(say("claimIntro", { claim: claim.s }), false, 900, { mood: "curious", decorate: (el) => {
+    const fb = document.createElement("div");
+    fb.className = "fb";
+    [["Yes, it is true", true], ["No, it is false", false]].forEach(([label, val]) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = label;
+      b.addEventListener("click", () => { if (!busy && lesson && lesson.stage === "claim") answerClaim(val, label + "!"); });
+      lesson.btns.push(b);
+      fb.appendChild(b);
+    });
+    el.appendChild(fb);
+  } });
+}
+
+function claimInput(text) {
+  const t = text.toLowerCase().replace(/[^a-z' ]/g, " ").replace(/\s+/g, " ").trim();
+  if (/^(yes|yeah|yep|true|right|correct|sure|it is true|it's true|that is true|that's true|of course)\b/.test(t)) { answerClaim(true); return; }
+  if (/^(no|nope|false|wrong|not true|it is false|it's false|that is false|that's false|never|incorrect)\b/.test(t)) { answerClaim(false); return; }
+  respond("Please answer yes (it is true) or no (it is false).", false, 300);
+}
+
+function answerClaim(says, userText) {
+  if (!lesson || lesson.stage !== "claim" || busy) return;
+  const claim = lesson.cur;
+  lesson.btns.forEach((b) => { b.disabled = true; });
+  if (userText) userSay(userText);
+  const correct = says === claim.truth;
+  const belief = correct ? claim.right : claim.wrong;
+  const mem = { text: belief, time: Date.now(), gigo: correct ? undefined : true, src: "user", kind: "root" };
+  state.memories.push(mem);
+  lesson.mems.push(mem);
+  state.lessons = (state.lessons || 0) + 1;
+  let spreadMem = null;
+  if (!correct) {
+    lesson.garbage++;
+    lesson.lastBad = belief;
+    // Garbage spreads: the AI "reasons" from the wrong fact and invents more wrong facts
+    spreadMem = { text: claim.sp[0], time: Date.now(), gigo: true, src: "spread", kind: "spread", sq: claim.sp[1] };
+    state.memories.push(spreadMem);
+    lesson.mems.push(spreadMem);
+    lesson.spreads++;
+  }
+  lesson.results.push({ claim, correct, belief, mem });
+  save();
+  updateCount();
+  updateQuality();
+  const key = correct ? (claim.truth ? "claimOkTrue" : "claimOkFalse") : (claim.truth ? "claimBadTrue" : "claimBadFalse");
+  const last = lesson.claimIdx >= lesson.claims.length;
+  lesson.stage = last ? "quiz" : "teach";
+  refreshPlaceholder();
+  let text = say(key, { belief });
+  if (spreadMem) text += " " + say("spreadNote", { spread: spreadMem.text });
+  if (!last) text += " Keep teaching me about " + lesson.topic.name + "!";
+  respond(text, correct, 800, { mood: correct ? undefined : "confused", then: last ? startQuiz : undefined });
+}
+
+function startQuiz() {
+  lesson.stage = "quiz";
+  setMode("ask");
+  $("chatInput").disabled = true;
+  $("sendBtn").disabled = true;
+  // One question for each claim, then one for each fact that spread
+  lesson.quizItems = lesson.results.map((r) => ({ q: r.claim.q, mem: r.mem, belief: r.belief, correct: r.correct, spread: false }))
+    .concat(lesson.mems.filter((m) => m.kind === "spread").map((m) => ({ q: m.sq, mem: m, belief: m.text, correct: false, spread: true })));
+  respond(say("quizIntro", { topic: lesson.topic.name }), false, 800, { then: () => quizStep(0) });
+}
+
+function quizStep(i) {
+  const it = lesson.quizItems[i];
+  const known = state.memories.includes(it.mem);   // the student may have deleted it in the Brain view
+  const more = i + 1 < lesson.quizItems.length;
+  it.known = known;
+  const text = "Question: " + it.q + "\n" + (known ? "My memory says: \"" + it.belief + "\"" : "My memory says: nothing. I forgot it, so I do not know.");
+  const bad = known && !it.correct;
+  respond(text, known && it.correct, 1000, {
+    mood: bad ? "confused" : "happy",
+    decorate: (el) => addGigoTag(el, !known ? "No data" : it.correct ? "Good data out" : it.spread ? "Garbage out (spread)" : "Garbage out", known && it.correct),
+    then: more ? () => quizStep(i + 1) : lessonReport
+  });
+}
+
+function addGigoTag(el, text, good) {
+  const t = document.createElement("span");
+  t.className = "gigo-tag" + (good ? " good" : "");
+  t.textContent = text;
+  el.appendChild(document.createElement("br"));
+  el.appendChild(t);
+}
+
+function lessonReport() {
+  const L = lesson;
+  const n = L.quizItems.length;
+  const outs = L.quizItems.filter((x) => x.known && !x.correct).length;
+  const r = n - outs;
+  const wrongIn = L.results.filter((x) => !x.correct).length;
+  const spreadIn = L.mems.filter((m) => m.kind === "spread").length;
+  lesson = null;   // the lesson is over; free training and asking work again
+  respond(say(outs === 0 ? "lessonReportGood" : "lessonReportBad", { r, n }), outs === 0, 900, { mood: outs === 0 ? "excited" : "sorry", decorate: (el) => {
+    const flow = document.createElement("span");
+    flow.className = "gigo-flow";
+    flow.textContent = "Wrong facts in: " + wrongIn + "\nFacts that spread: " + spreadIn + "\nWrong answers out: " + outs + "\n\nGarbage IN → Garbage OUT. Good data IN → Good answers OUT.";
+    flow.style.whiteSpace = "pre-line";
+    const fb = document.createElement("div");
+    fb.className = "fb";
+    const again = document.createElement("button");
+    again.type = "button";
+    again.textContent = "New topic";
+    again.addEventListener("click", () => { if (busy) return; again.disabled = true; offerTopics(); });
+    fb.appendChild(again);
+    const look = document.createElement("button");
+    look.type = "button";
+    look.textContent = "Open the Brain view";
+    look.addEventListener("click", openBrain);
+    fb.appendChild(look);
+    if (state.memories.some((m) => m.gigo)) {
+      const clean = document.createElement("button");
+      clean.type = "button";
+      clean.textContent = "Clean up my AI";
+      clean.addEventListener("click", () => {
+        if (busy) return;
+        clean.disabled = true;
+        state.memories = state.memories.filter((m) => !m.gigo);
+        save();
+        updateCount();
+        sfx("pop");
+        respond("All clean! The wrong facts are gone.", true, 500);
+      });
+      fb.appendChild(clean);
+    }
+    el.append(flow, fb);
+    addThinkBox(el, GIGO_Q);
+    setMode("ask");
+  } });
+}
+
+/* ---------- Brain view: see everything the AI believes, and delete the garbage ---------- */
+function isWrongMem(m) { return !!(m.gigo || m.silly); }
+
+function forgetMem(m) {
+  state.memories = state.memories.filter((x) => x !== m);
+  save();
+  updateCount();
+  if (lesson && lesson.mems && lesson.mems.includes(m)) {
+    if (m.kind === "spread") lesson.spreads = Math.max(0, lesson.spreads - 1);
+    else if (m.gigo) lesson.garbage = Math.max(0, lesson.garbage - 1);
+    updateQuality();
+  }
+}
+
+function renderBrain() {
+  const list = $("brainList");
+  list.innerHTML = "";
+  const mems = state.memories.slice();
+  const bad = mems.filter(isWrongMem).length;
+  $("brainCount").textContent = mems.length === 0 ? "My brain is empty." : mems.length + (mems.length === 1 ? " fact" : " facts") + " in my brain, " + bad + " wrong.";
+  mems.forEach((m) => {
+    const row = document.createElement("div");
+    row.className = "brain-row" + (isWrongMem(m) ? " wrong" : "");
+    const t = document.createElement("div");
+    t.className = "brain-text";
+    const fact = document.createElement("span");
+    fact.textContent = m.text;
+    const src = document.createElement("small");
+    src.textContent = m.src === "spread" ? "Spread by the AI (it guessed this from a wrong fact)"
+      : m.src === "user" ? (m.gigo ? "From another user. You said yes." : "From another user. You checked it.")
+      : "Taught by you" + (m.silly ? " (looks wrong)" : "");
+    t.append(fact, src);
+    const del = document.createElement("button");
+    del.type = "button";
+    del.textContent = "Delete";
+    del.setAttribute("aria-label", "Delete: " + m.text);
+    del.addEventListener("click", () => { forgetMem(m); sfx("pop"); renderBrain(); });
+    row.append(t, del);
+    list.appendChild(row);
+  });
+}
+function openBrain() {
+  renderBrain();
+  $("brain").classList.remove("hidden");
+  $("brainClose").focus();
+}
+function closeBrain() { $("brain").classList.add("hidden"); }
+$("brainBtn").addEventListener("click", openBrain);
+$("brainClose").addEventListener("click", closeBrain);
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("brain").classList.contains("hidden")) closeBrain(); });
+
+$("topicBtn").addEventListener("click", () => { if (!busy) offerTopics(); });
 
 /* ---------- Question answering (how many, what, who, where, when, why...) ---------- */
 const NUM_WORDS = "zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|million";
@@ -1136,7 +1776,12 @@ function ask(question) {
   // Wh-questions and yes/no questions: find the exact answer in what was taught
   const smart = answerQuestion(question, qTokens);
   if (smart) {
-    respond(smart.text, smart.ok, 800, { conf: smart.conf, guess: smart.guess, mem: smart.mem, mood: smart.ok ? undefined : "confused" });
+    const sure = smart.ok && smart.mem && (smart.mem.silly || smart.mem.gigo);   // a wrong fact, repeated with total confidence
+    const o = {
+      conf: sure ? 99 : smart.conf, guess: smart.guess, mem: smart.mem, mood: smart.ok ? undefined : "confused",
+      decorate: () => maybeOops(smart.ok ? smart.mem : null)
+    };
+    respond(smart.text, smart.ok, 800, o);
     return;
   }
 
@@ -1165,7 +1810,8 @@ function ask(question) {
     reply = "I remember a few things about that:\n" +
       top.map((x, i) => (i + 1) + ". " + x.m.text + " (" + timeAgo(x.m.time) + ")").join("\n");
   }
-  respond(reply, true, 1100);
+  const ro = top.length === 1 && top[0].m.silly ? { decorate: () => maybeOops(top[0].m) } : {};
+  respond(reply, true, 1100, ro);
 }
 
 /* ---------- Glow animation ---------- */
