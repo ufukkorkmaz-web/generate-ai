@@ -506,6 +506,7 @@ function runBoot() {
   }
 
   setPersona((existing && existing.persona) || persona);
+  syncStartBtn();
   let i = 0;
   const total = 38;
   const timer = setInterval(() => {
@@ -556,8 +557,19 @@ $("nameInput").addEventListener("keydown", (e) => {
   }
   if (e.key !== "Enter") return;
   e.preventDefault();
+  submitName();
+});
+$("startBtn").addEventListener("click", submitName);
+$("nameInput").addEventListener("input", syncStartBtn);
 
-  const value = e.target.value.trim();
+// The button says "Continue" when a saved AI is waiting and the name box is empty
+function syncStartBtn() {
+  const existing = load();
+  $("startBtn").textContent = !$("nameInput").value.trim() && existing && existing.name ? "Continue" : "Start";
+}
+
+function submitName() {
+  const value = $("nameInput").value.trim();
   const existing = load();
   const err = $("nameError");
 
@@ -588,7 +600,7 @@ $("nameInput").addEventListener("keydown", (e) => {
   state = { name: value, memories: [], persona };
   save();
   startLoading(value, false);
-});
+}
 
 /* ---------- Screen 2: loading (3 seconds) ---------- */
 function startLoading(name, returning) {
